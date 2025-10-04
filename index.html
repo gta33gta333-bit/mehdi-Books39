@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌙 موقع الأذكار والقرآن</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin:0;
+      font-family:'Cairo',sans-serif;
+      background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('https://i.ibb.co/dM4Z6Pw/islamic-bg.jpg') no-repeat center center fixed;
+      background-size:cover;
+      color:#fff;
+      text-align:center;
+      overflow-x:hidden;
+    }
+
+    header {
+      background:rgba(0,0,0,0.7);
+      padding:20px;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      border-bottom:2px solid #FFD700;
+    }
+    header h1 {
+      font-size:28px;
+      color:#FFD700;
+      margin:0;
+      text-shadow:0 0 15px #FFD700, 0 0 30px #FFEA00;
+    }
+    nav { margin-top:10px; }
+    nav a {
+      color:white;
+      margin:0 12px;
+      text-decoration:none;
+      font-weight:bold;
+      padding:6px 12px;
+      border-radius:6px;
+      transition:0.3s;
+    }
+    nav a:hover { 
+      background:#FFD700; 
+      color:#000;
+      box-shadow:0 0 15px #FFD700;
+    }
+
+    section {
+      padding:60px 20px;
+    }
+    .section-title {
+      font-size:32px;
+      margin-bottom:30px;
+      color:#FFD700;
+      text-shadow:0 0 20px #FFD700,0 0 40px #FFEA00;
+    }
+
+    .box {
+      background:rgba(255,255,255,0.1);
+      padding:20px;
+      margin:15px auto;
+      border-radius:15px;
+      width:300px;
+      transition:0.3s;
+      box-shadow:0 0 20px rgba(255,215,0,0.3);
+    }
+    .box:hover { 
+      transform:scale(1.08); 
+      box-shadow:0 0 30px rgba(255,215,0,0.8);
+    }
+    .box a {
+      text-decoration:none;
+      color:#FFD700;
+      font-size:22px;
+      font-weight:bold;
+      display:block;
+    }
+    .box i {
+      font-size:35px;
+      margin-bottom:10px;
+      color:white;
+    }
+
+    /* الأزرار الجانبية */
+    .side-buttons {
+      position: fixed;
+      right: 15px;
+      top: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      z-index: 2000;
+    }
+    .side-buttons button {
+      background: #FFD700;
+      color: #000;
+      border: none;
+      padding: 12px 15px;
+      border-radius: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 15px #FFD700;
+      transition: 0.3s;
+    }
+    .side-buttons button:hover {
+      background: #fff;
+      color: #000;
+      box-shadow: 0 0 25px #FFD700;
+      transform: scale(1.1);
+    }
+
+    footer {
+      background:#000;
+      color:#FFD700;
+      padding:15px;
+      text-shadow:0 0 10px #FFD700;
+      font-size:14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+ <h1>🌙 موقع مهدي للاذكار والقران</h1>
+  <nav>
+    <a href="#azkar">الأذكار</a>
+    <a href="#quran">القرآن</a>
+    <a href="#roqya">الرقية</a>
+    <a href="#live">بث مباشر</a>
+  </nav>
+</header>
+
+<!-- قسم الأذكار -->
+<section id="azkar">
+  <div class="section-title">📿 الأذكار</div>
+  <div class="box">
+    <i class="fas fa-sun"></i>
+    <a href="https://youtu.be/hVdPOD5g1gs?si=kTythjb2nXOm8meU" target="_blank">🌅 أذكار الصباح</a>
+  </div>
+  <div class="box">
+    <i class="fas fa-moon"></i>
+    <a href="https://youtu.be/TGtdZmxsM5Q?si=zGyCout_imkSZEv2" target="_blank">🌆 أذكار المساء</a>
+  </div>
+  <div class="box">
+    <i class="fas fa-bed"></i>
+    <a href="https://youtu.be/hYfEHbMnREU?si=LsmWl8cBd1b6wzPG" target="_blank">🛏️ أذكار النوم</a>
+  </div>
+  <div class="box">
+    <i class="fas fa-pray"></i>
+    <a href="https://youtu.be/BQxnb6DzyzI?si=1EcUj1-CFEDUWHBv" target="_blank">🕌 أذكار بعد الصلاة</a>
+  </div>
+</section>
+
+<!-- قسم القرآن -->
+<section id="quran">
+  <div class="section-title">📖 القرآن الكريم</div>
+  <div class="box">
+    <i class="fas fa-book-quran"></i>
+    <a href="https://youtu.be/Y1M6hJHHrjM?si=pcAAI7ezcVEuvuTh" target="_blank">📖 القرآن (العفاسي)</a>
+  </div>
+  <div class="box">
+    <i class="fas fa-headphones"></i>
+    <a href="https://youtu.be/HYZcxf89ByM?si=p8iQ2SNI9auY9WAh" target="_blank">🎧 القرآن بصوت عبد الباسط</a>
+  </div>
+</section>
+
+<!-- قسم الرقية -->
+<section id="roqya">
+  <div class="section-title">🕌 الرقية الشرعية</div>
+  <div class="box">
+    <i class="fas fa-hands-praying"></i>
+    <a href="https://youtu.be/4mxByRIiRxM?si=e_yQ67PFtleolUsi" target="_blank">🕋 الرقية الشرعية</a>
+  </div>
+</section>
+
+<!-- قسم البث المباشر -->
+<section id="live">
+  <div class="section-title">📡 بث مباشر</div>
+  <div class="box">
+    <i class="fas fa-kaaba"></i>
+    <a href="https://www.youtube.com/live/Phod2aaQISw?si=rQd0CRebUdLaMRdV" target="_blank">🕋 بث مباشر من مكة</a>
+  </div>
+  <div class="box">
+    <i class="fas fa-mosque"></i>
+    <a href="https://www.youtube.com/live/_ncF2jau6wE?si=49m9PtaqyjU5UICZ" target="_blank">🕌 بث مباشر من المدينة</a>
+  </div>
+</section>
+
+<!-- الأزرار الجانبية -->
+<div class="side-buttons">
+  <button onclick="speak('اللهم اغفر لنا')">🤲 اللهم اغفر لنا</button>
+  <button onclick="speak('اللهم ارزقنا الجنة')">🌙 اللهم ارزقنا الجنة</button>
+  <button onclick="speak('اللهم بارك لنا')">🕌 اللهم بارك لنا</button>
+  <button onclick="speak('اللهم ارحم والدينا')">💖 اللهم ارحم والدينا</button>
+</div>
+
+<footer>
+  تم التطوير بواسطة 💻 مهدي للبرمجة
+</footer>
+
+<script>
+  function speak(text) {
+    let utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = "ar-SA"; // صوت عربي
+    utterance.rate = 1;
+    utterance.pitch = 1;
+    speechSynthesis.speak(utterance);
+  }
+</script>
+
+</body>
+</html>
